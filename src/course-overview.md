@@ -1,6 +1,6 @@
 # Course Overview
 
-**CS3003** | *6 ECTS Credits*
+**CSA003** | *6 ECTS Credits*
 
 ## Welcome to Data Structures and Algorithms 2!
 
