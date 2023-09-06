@@ -34,11 +34,28 @@ As we learn about these data structures, we implement them in Python or use exis
 
 ### Array
 
-Python doesn't have a built-in array data type. However, it does have a *list* data type, which we use to simulate an array. Under the hood, Python lists are actually implemented as arrays.
+Python doesn't have a built-in array data type. However, it does have a *list* data type, which we use to simulate an array. Under the hood, Python lists are actually implemented as arrays, so we have to be careful and recognize that occasionally operations on a Python list might be expensive (for example, inserting an item in the middle of a list).
 
 ### Linked list
 
 When we need to use a linked list, we create a special `Node` class that contains at least a piece of data and a reference to the next node in the list. We then create instances of the `Node` list and connect them to form a linked list.
+
+For example, here's a portion of the `LLString` class that used in a previous semester, which includes `Node` as a nested, inner class and also has a `prepend()` method to add a node to the head of the list.
+
+```python
+class LLString:
+    class Node:
+        def __init__(self, val, next):
+            self.val = val
+            self.next = next
+
+    def __init__(self):
+        self.head = None
+
+    def prepend(self, new_val):
+        new_node = LLString.Node(new_val, self.head)
+        self.head = new_node
+```
 
 ### Queue
 
