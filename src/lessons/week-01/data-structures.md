@@ -8,7 +8,7 @@ We think of arrays and linked lists as *building block* data structures; we ofte
 
 How we choose to implement data structures, including deciding between using an array or a linked list, depends on what properties we are looking for and what efficiency is required. Check out the video below to remind yourself about these data structures:
 
-<div
+<div>
   style="position: relative; padding-bottom: 56.25%; height: 0;">
   <iframe
     src="https://www.youtube.com/embed/o6VuST08S60?si=0nwfp2MlJjPQDA2o"
@@ -22,11 +22,11 @@ How we choose to implement data structures, including deciding between using an 
 
 To summarize:
 
-    * Big-O notation provides us with a language to analyze the efficiency of algorithms, both in terms of time and space. Big-O classes include `O(1)` (constant), `O(logn)`, `O(n)`, <code>O(n<sup>2</sup>)</code>, and <code>O(c<sup>n</sup>)</code> (in order from fastest to slowest).
-    * An array is a fixed-size collection of items that provides random access to its elements.
-    * A linked list is an extensible collection of items that does not provide random access to its elements.
-    * A queue is a data structure with a *first-in, first-out* (FIFO) abstraction.
-    * A stack is a data structure with a *last-in, first-out* (LIFO) abstraction.
+* Big-O notation provides us with a language to analyze the efficiency of algorithms, both in terms of time and space. Big-O classes include `O(1)` (constant), `O(logn)`, `O(n)`, <code>O(n<sup>2</sup>)</code>, and <code>O(c<sup>n</sup>)</code> (in order from fastest to slowest).
+* An array is a fixed-size collection of items that provides random access to its elements.
+* A linked list is an extensible collection of items that does not provide random access to its elements.
+* A queue is a data structure with a *first-in, first-out* (FIFO) abstraction.
+* A stack is a data structure with a *last-in, first-out* (LIFO) abstraction.
 
 ## Data structures in Python
 
@@ -48,6 +48,6 @@ Python provides a `deque` object from its `collections` library that we can use 
 
 ### Stack
 
-The easiest way to simulate a stack in Python is to use a list. To push items onto the stack, we can use the 'append()` method, and the pop items from the top of the stack we can use the (you guessed it) `pop()` method:
+The easiest way to simulate a stack in Python is to use a list. To push items onto the stack, we can use the `append()` method, and the pop items from the top of the stack we can use the (you guessed it) `pop()` method:
 
 <iframe src="https://trinket.io/embed/python3/63a0468993" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
