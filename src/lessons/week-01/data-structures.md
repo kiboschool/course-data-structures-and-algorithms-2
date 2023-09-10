@@ -65,6 +65,20 @@ Python provides a `deque` object from its `collections` library that we can use 
 
 ### Stack
 
-The easiest way to simulate a stack in Python is to use a list. To push items onto the stack, we can use the `append()` method, and the pop items from the top of the stack we can use the (you guessed it) `pop()` method:
+The easiest way to simulate a stack in Python is to use a list. To push items onto the stack, we can use the `append()` method, and the pop items from the top of the stack we can use the (you guessed it) `pop()` method. Both of these are `O(1)` algorithms.
 
 <iframe src="https://trinket.io/embed/python3/63a0468993" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<aside>
+<b>Check your understanding</b>
+<p>Imagine you are creating an order processing system for an online retailer. Orders are constantly coming into the system, and at some point need to be selected for processing and sent to the warehouse.</p>
+<p>The time that it takes for the order to be sent to the processing step is not an especially strict requirement -- it could take minutes or hours without any issue. Therefore, a colleague suggests that it doesn't matter whether a stack or a queue is chosen as the data structure to hold the orders -- either would work well.</p>
+<p>However, another colleague suggests that one of those data structures could lead to a situation where orders are <i>starved</i> -- in other words, held indefinitely in the data structure and not processed.</p>
+<p>Which colleague is correct? If it's possible for order requests to be starved, which data structure would lead to that scenario?</p>
+<details>
+<summary>
+<i>Click to reveal the answer.</i>
+</summary>
+<p><b>Answer.</b> A stack could theoretically lead to a scenario where orders are kept in the data structure indefinitely. If orders continue to come into the system (as described by the prompt), then they will continue to be added to the top of the stack and then immediately processed. Orders that were added earlier will be at the bottom of the stack, and will only be able to be processed if the system can process orders faster than they arrive.</p>
+</details>
+</aside>
