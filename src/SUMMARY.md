@@ -14,7 +14,7 @@
 - [Python and Data Structures Review](lessons/week-01.md)
 
   - [Data structures](lessons/week-01/data-structures.md)
-  - [Arrays vs. linked structures](lessons/week-01/arrays-linked.md)
+  - [Arrays vs. linked lists](lessons/week-01/arrays-linked.md)
   - [Efficiency and big-O notation](lessons/week-01/big-o.md)
   - [Recursion](lessons/week-01/recursion.md)
   - [Dictionaries and trees](lessons/week-01/dicts-trees.md)

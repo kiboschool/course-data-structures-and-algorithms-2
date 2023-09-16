@@ -37,7 +37,6 @@ To summarize:
 <summary>
 <i>Click to reveal the answer.</i>
 </summary>
-<p><b>Answer.</b> Neither would be more especially more efficient than the other. With an array, you could quickly find the location where a new item was to be added using binary search (`O(logn)`), but it would take `O(n)` time to perform the insertion due to the need to shift items. With a linked list, it would take `O(n)` time to reach the middle of the list, but then only `O(1)` time to perform the insertion. Therefore, both would generally require `O(n)` insertion algorithms.</p>
+<p><b>Answer.</b> Neither would be more especially more efficient than the other. With an array, you could quickly find the location where a new item was to be added using binary search (<code>O(logn)</code>), but it would take <code>O(n)</code> time to perform the insertion due to the need to shift items. With a linked list, it would take <code>O(n)</code> time to reach the middle of the list, but then only <code>O(1)</code> time to perform the insertion. Therefore, both would generally require <code>O(n)</code> insertion algorithms.</p>
 </details>
 </aside>
-
