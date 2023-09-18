@@ -57,5 +57,3 @@ To summarize:
 <p><b>Answer.</b> The first <code>for</code> loop has a running time of <code>O(n)</code>, since the loop bound is some function of the size of the list (<code>n</code>). The second loop is <code>O(n<sup>2</sup>)</code>, since the outer loop is <code>O(n)</code> and the inner loop is <code>O(n)</code> (since it depends on the outer loop variable <code>i</code>). Our expression for the big-O running time is therefore <code>O(n) + O(n)*O(n)</code>, which is <code>O(n<sup>2</sup>)</code>.</p>
 </details>
 </aside>
-
-
