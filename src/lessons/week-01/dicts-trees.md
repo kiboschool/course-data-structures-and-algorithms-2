@@ -31,4 +31,4 @@ With *balanced* binary search trees, we can additionally guarantee logarithmic t
 
 ## What's next?
 
-Logarithmic algorithms are quite fast for data dictionaries, and are certainly a significant improvement over linear search. However, we can actually do even *better* with the help of *hash tables(. Believe it or not, we will actually be able to implement search and insertion in `O(1)` time! This will be the topic of our next week of study.
+Logarithmic algorithms are quite fast for data dictionaries, and are certainly a significant improvement over linear search. However, we can actually do even *better* with the help of *hash tables*. Believe it or not, we will actually be able to implement search and insertion in `O(1)` time! This will be the topic of our next week of study.
