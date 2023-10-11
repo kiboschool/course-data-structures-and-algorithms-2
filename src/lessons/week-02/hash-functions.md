@@ -10,11 +10,14 @@ Say we are trying to insert some (key, value) pairs into an initially empty arra
 
 For example, say that our (key, value) pairs represent football players. Each key is a player's jersey number, and each value is the player's name. If we can assume that jersey numbers are in the range 0-99, then we can easily insert all of the players into an array of length 100:
 
-<!-- insert picture here -->
+<center>
+<img
+  src="/images/week-02/dsa2-week2-jerseynumber.png"
+  alt="An array of length 100 that holds only three entries: 'Rashidi Yekini' at index 9, 'Jay Jay Okocha' at index 10, and 'John Obi Mikel' at index 21. The remaining indices are empty."
+  style="width:500px;" />
+</center>
 
-To lookup the name of a player, we can use their jersey number to index the array and find the name in `O(1)` time:
-
-<!-- insert picture here -->
+To lookup the name of a player, we can use their jersey number to index the array and find the name in `O(1)` time.
 
 However, most real-world problems do not behave this way. In many problems, we don't know the likely *key space*, or range of potential keys, ahead of time. Even if we knew the range of keys, we have to make our array large enough to fit the maximum value in the range. In other words, if the maximum possible key value was 1,000,000, we would need to make our array large enough to hold 1,000,000 items, even if we were only expecting 1,000 items in total.
 
@@ -31,7 +34,7 @@ However, most real-world problems do not behave this way. In many problems, we d
 
 Because of these issues related to the data types and ranges of values of keys, directly using keys to index an array won't work in the general case. However, we can achieve a similar result using hash functions.
 
-## Hash functions
+## Hash tables and hash functions
 
 *Hash functions* provide us with the ability to map keys of any data type to array indices. Watch the video below to learn about how hash functions work:
 
@@ -56,8 +59,3 @@ To summarize:
 </details>
 </aside>
 
-## A sample hash function (optional)
-
-You may be wondering how a hash function could possibly take, for example, a string key and map it to a number effectively. There are a lot of possible ways to do this; the following video describes just one approach.
-
-<!-- https://www.youtube.com/watch?v=WyFwieF1NN4 -->
